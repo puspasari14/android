@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.puspaanggraeni.portofolio.main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.puspaanggraeni.portofolio.InputFragment"
+        android:label="fragment_input"
+        tools:layout="@layout/fragment_input" >
+        <action
+            android:id="@+id/action_inputFragment_to_hasilFragment"
+            app:destination="@id/hasilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hasilFragment"
+        android:name="com.puspaanggraeni.portofolio.HasilFragment"
+        android:label="fragment_hasil"
+        tools:layout="@layout/fragment_hasil" />
+</navigation>

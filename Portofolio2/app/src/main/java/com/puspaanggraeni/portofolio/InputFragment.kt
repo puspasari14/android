@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_input.*
  * A simple [Fragment] subclass.
  */
 class InputFragment : Fragment() {
-    lateinit var nav: NavController
+    lateinit var nav :NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,14 +23,29 @@ class InputFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_input, container, false)
     }
-    overide fun onViewCreated(view: View, savedInstanceState: Bundle?){
 
-    super.onViewCreated(view, savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         nav = Navigation.findNavController(view)
-        buttonsubmit.setOnClickListener{it:View!
-        if(editTextinput1.text.toString().isNotEmpty()){
-            val input : string
-        }}
+
+        buttonsubmit.setOnClickListener {
+            if(editTextinput1.text.toString().isNotEmpty())
+            {
+                val input : String =editTextinput1.text.toString()
+
+                val bundle1=Bundle()
+
+                bundle1.putString("args",input)
+
+                nav.navigate(R.id.action_inputFragment_to_hasilFragment,bundle1)
+
+            }
+
+
+        }
+
+    }
     }
 
-}
+

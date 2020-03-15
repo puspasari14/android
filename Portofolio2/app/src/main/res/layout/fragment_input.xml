@@ -5,37 +5,26 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#379C27B0"
     tools:context=".InputFragment">
 
     <EditText
         android:id="@+id/editTextinput1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Nama"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextinput2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextinput2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="NIM"
+        android:hint="@string/hint"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/buttonsubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.713" />
 
     <Button
         android:id="@+id/buttonsubmit"
@@ -43,8 +32,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:text="Submit"
+        android:backgroundTint="#0A74A3"
+        android:text="@string/butonsubmit"
+        android:textAlignment="center"
+        android:textColor="#F5F5F5"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        android:contentDescription="@string/back"
+        android:scaleType="fitXY"
+        android:src="@drawable/aurora"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

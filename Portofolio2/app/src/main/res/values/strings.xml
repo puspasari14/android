@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint">Mssukan Nama lengkap Anda</string>
+    <string name="butonsubmit">Submit</string>
+    <string name="buttonutama">Masukan Data</string>
+    <string name="main_awal">Silahkan isikan biodata anda</string>
+    <string name="profil">profil</string>
+    <string name="back">back</string>
+    <string name="nama">Nama Anda</string>
 </resources>

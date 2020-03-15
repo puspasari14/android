@@ -24,13 +24,19 @@ class main : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
-    override fun onCrateView{view: View, savedInstanceSatate:Bundle?}{
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         nav = Navigation.findNavController(view)
 
-        buttonutama.setOnClickListener{it:View!
-                nav.navigate(R.id.action_main_to_inputFragment)
+        buttonutama.setOnClickListener{
+            nav.navigate(R.id.action_main_to_inputFragment)
+
     }
+
+
+
     }
 
 
